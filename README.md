@@ -14,7 +14,7 @@ A version for Wireshark 3.4 is precompiled for easier installation
 ## Linux
 
 - Download the packet-minecraft.so from the latest [release](https://github.com/aresrpg/minecraft-dissector/releases/latest)
-- Put it inside your [Wireshark Plugin Folder](https://www.wireshark.org/docs/wsug_html_chunked/ChPluginFolders.html): `~/.local/lib/wireshark/plugins/3.4/epan` (Create the required folders if they don't exist)
+- Put it inside your [Wireshark Plugin Folder](https://www.wireshark.org/docs/wsug_html_chunked/ChPluginFolders.html): `~/.local/lib/wireshark/plugins/4.0/epan` (Create the required folders if they don't exist)
 
 # Usage
 
@@ -28,6 +28,7 @@ You can use the `minecraft` filter to only display minecraft packets
 
 ```bash
 apt install make gcc pkg-config wireshark-dev nodejs # Ubuntu
+dnf install make gcc pkgconfig wireshark-devel nodejs libgcrypt-devel # Fedora
 nix-shell -p gnumake wireshark.dev pkgconfig glib.dev nodejs-14_x # Nixos
 ```
 
